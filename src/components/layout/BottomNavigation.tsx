@@ -1,12 +1,9 @@
 import React from 'react'
 import { Text, View, StyleSheet } from 'react-native';
-import Container from './../Container';
+import Container from './Container';
 import NavLink from '../partials/NavLink';
-{/* <Feather name="home" size={24} color="black" /> */ }
 import HomeIcon from '../svg/HomeIcon'
 import TicketIcon from '../svg/TicketIcon';
-
-
 
 export default function BottomNavigation({ active, navigation }: { active: string, navigation: any }) {
   return (

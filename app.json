@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Assembleia Sócio",
-    "slug": "app-assembleia-socio",
+    "name": "Bredi Template",
+    "slug": "app-bredi-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

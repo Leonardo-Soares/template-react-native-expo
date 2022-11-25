@@ -17,20 +17,20 @@ export default function NavLink({ active, icon, title, path, navigation }: { act
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 20,
     flex: 1,
+    borderRadius: 20,
+    alignItems: 'center',
     backgroundColor: '#fff',
     justifyContent: 'center',
-    alignItems: 'center',
   },
   text: {
     fontSize: 12,
     fontWeight: 'bold',
   },
   bar: {
-    marginTop: 12,
     width: 60,
     height: 4,
+    marginTop: 12,
     borderTopLeftRadius: 4,
     borderTopRightRadius: 4,
   }

@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import { View, Image, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
+import { View, Image, StyleSheet, ImageBackground } from "react-native";
 import TextField from "../components/forms/TextField";
 import { useForm } from 'react-hook-form'
-import Container from "../components/Container";
-import { ILoginForm } from "../types";
+import Container from "../components/layout/Container";
 import ButtonSolid from "../components/buttons/ButtonSolid";
 import H1 from "../components/headings/H1";
 import bgNeutroPng from '../../assets/img/bg/bg-neutro.png'
@@ -15,7 +14,7 @@ export default function LoginScreen({ navigation }: { navigation: any }) {
 
   const { register, setValue, handleSubmit, formState: { errors, isSubmitting } } = useForm()
 
-  const onSubmit = (data: ILoginForm) => {
+  const onSubmit = (data: '') => {
     console.log(data);
     navigation.navigate('Home')
   }
@@ -23,7 +22,6 @@ export default function LoginScreen({ navigation }: { navigation: any }) {
   useEffect(() => {
     register('login', { required: true })
     register('senha', { required: true })
-    // register('password')
   }, [register])
 
   return (

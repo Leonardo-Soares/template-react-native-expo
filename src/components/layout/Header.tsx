@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, ImageBackground, Image, TouchableOpacity } from 'react-native'
 import image from '../../../assets/img/bg/bg-menu.png'
 import logotipo from '../../../assets/img/logotipo.png'
-import Container from '../Container'
+import Container from './Container'
 import { MaterialIcons, AntDesign } from '@expo/vector-icons';
 interface IHeaderProps {
   title: string

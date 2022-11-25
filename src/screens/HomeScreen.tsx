@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../components/Container";
+import Container from "../components/layout/Container";
 import HomeCards from "../components/home/HomeCards";
 import MainLayout from "../components/layout/MainLayout";
 
