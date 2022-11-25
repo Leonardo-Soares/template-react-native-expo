@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import Container from "../components/layout/Container";
-import H1 from "../components/headings/H1";
+import H1 from "../components/fonts/H1";
 import MainLayout from "../components/layout/MainLayout";
 
 export default function BoletoScreen({ navigation }: { navigation: any }) {

@@ -2,7 +2,7 @@ import React from "react";
 import { View, ScrollView } from "react-native";
 import CardNotificao from "../components/cards/CardNotificao";
 import Container from "../components/layout/Container";
-import H1 from "../components/headings/H1";
+import H1 from "../components/fonts/H1";
 import MainLayout from "../components/layout/MainLayout";
 
 export default function NotificacaoScreen({ navigation }: { navigation: any }) {

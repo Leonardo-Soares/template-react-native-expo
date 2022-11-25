@@ -4,7 +4,7 @@ import TextField from "../components/forms/TextField";
 import { useForm } from 'react-hook-form'
 import Container from "../components/layout/Container";
 import ButtonSolid from "../components/buttons/ButtonSolid";
-import H1 from "../components/headings/H1";
+import H1 from "../components/fonts/H1";
 import bgNeutroPng from '../../assets/img/bg/bg-neutro.png'
 import logoPng from '../../assets/img/logo.png'
 import SwiperNews from "../components/swipers/SwiperNews";

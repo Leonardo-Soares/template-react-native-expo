@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, ScrollView } from 'react-native'
 import CardHome from '../cards/CardHome'
-import H1 from '../headings/H1'
+import H1 from '../fonts/H1'
 
 
 export default function HomeCards({ navigation }: { navigation: any }) {
