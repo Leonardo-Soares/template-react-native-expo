@@ -7,9 +7,10 @@ import { MaterialIcons, AntDesign } from '@expo/vector-icons';
 interface IHeaderProps {
   title: string
   type?: 'home' | 'internal'
+  logout?: any
 }
 
-export default function Header({ title, type }: IHeaderProps) {
+export default function Header({ title, type, logout }: IHeaderProps) {
   return (
     <ImageBackground style={styles.container} source={image} resizeMode='cover'>
       <Container>
@@ -28,7 +29,7 @@ export default function Header({ title, type }: IHeaderProps) {
           {
             type === 'home' ?
               (
-                <TouchableOpacity onPress={() => { }}>
+                <TouchableOpacity onPress={logout}>
                   <MaterialIcons name="logout" size={32} color="#0054A5" />
                 </TouchableOpacity>
               ) : (

@@ -5,7 +5,7 @@ import MainLayout from "../components/layout/MainLayout";
 
 export default function HomeScreen({ navigation }: { navigation: any }) {
   return (
-    <MainLayout path="Home" navigation={navigation} headerTitle={"Bem-vindo, Angelo"} type="home">
+    <MainLayout path="Home" navigation={navigation} headerTitle={"Bem-vindo, Bredi"} type="home">
       <Container>
         <HomeCards navigation={navigation} />
       </Container>
