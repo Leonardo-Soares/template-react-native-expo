@@ -4,6 +4,7 @@ import image from '../../../assets/img/bg/bg-menu.png'
 import logotipo from '../../../assets/img/logotipo.png'
 import Container from './Container'
 import { MaterialIcons, AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native'
 interface IHeaderProps {
   title: string
   type?: 'home' | 'internal'
@@ -11,6 +12,8 @@ interface IHeaderProps {
 }
 
 export default function Header({ title, type, logout }: IHeaderProps) {
+  const navigation = useNavigation(); 
+  
   return (
     <ImageBackground style={styles.container} source={image} resizeMode='cover'>
       <Container>
@@ -20,7 +23,7 @@ export default function Header({ title, type, logout }: IHeaderProps) {
               (
                 <Image source={logotipo} style={styles.logo} />
               ) : (
-                <TouchableOpacity onPress={() => { }}>
+                <TouchableOpacity onPress={() => navigation.goBack()}>
                   <AntDesign name="back" size={32} color="#0054A5" />
                 </TouchableOpacity>
               )
@@ -29,7 +32,7 @@ export default function Header({ title, type, logout }: IHeaderProps) {
           {
             type === 'home' ?
               (
-                <TouchableOpacity onPress={logout}>
+                <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                   <MaterialIcons name="logout" size={32} color="#0054A5" />
                 </TouchableOpacity>
               ) : (

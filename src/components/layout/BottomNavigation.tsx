@@ -23,7 +23,6 @@ export default function BottomNavigation({ active, navigation }: { active: strin
           path={'Convites'}
           icon={<TicketIcon active={active === "Convites"} />}
           navigation={navigation}
-
         />
 
         <NavLink
@@ -32,7 +31,6 @@ export default function BottomNavigation({ active, navigation }: { active: strin
           path={'Boleto'}
           icon={<HomeIcon active={active === "Boleto"} />}
           navigation={navigation}
-
         />
       </View>
     </View>
